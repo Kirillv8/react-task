@@ -13,7 +13,7 @@ interface Task {
 const App: React.FC<Task> = () => {
   // const [tasks, setTasks] = useState<Task[]>(initialTasks);
   const [tasks, dispatch] = useReducer(tasksReducer, initialTasks);
-  console.log('hello world')
+
   const handleAddTask = (text: string) => {
     dispatch({
       type: "added",
