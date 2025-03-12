@@ -3,19 +3,19 @@ import Heading from "./Components/Heading/Hearing";
 const App = () => {
   return (
     <>
-      <Section level={1}>
+      <Section>
         <Heading>Title</Heading>
-      </Section>
-      <Section level={2}>
-        {" "}
-        <Heading>Heading</Heading>
-        <Heading>Sub-heading</Heading>
-      </Section>
-      <Section level={3}>
-        {" "}
-        <Heading>Sub-sub-heading</Heading>
-        <Heading>Sub-sub-sub-heading</Heading>
-        <Heading>Sub-sub-sub-sub-heading</Heading>
+        <Section>
+          {" "}
+          <Heading>Heading</Heading>
+          <Heading>Sub-heading</Heading>
+          <Section>
+            {" "}
+            <Heading>Sub-sub-heading</Heading>
+            <Heading>Sub-sub-sub-heading</Heading>
+            <Heading>Sub-sub-sub-sub-heading</Heading>
+          </Section>
+        </Section>
       </Section>
     </>
   );

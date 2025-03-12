@@ -1,14 +1,15 @@
 import { ReactNode } from "react";
 import { LevelContext } from "../../context/LevelContext/LevelContext";
+import { useContext } from "react";
 
 interface SectionProp {
-  level?: number;
   children: ReactNode;
 }
-const Section: React.FC<SectionProp> = ({ level = 1, children }) => {
+const Section: React.FC<SectionProp> = ({ children }) => {
+  const level = useContext(LevelContext);
   return (
     <>
-      <LevelContext.Provider value={level}>
+      <LevelContext.Provider value={level + 1}>
         <section>{children}</section>
       </LevelContext.Provider>
     </>
