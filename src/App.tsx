@@ -1,10 +1,10 @@
-import RequestTracker from "./task-1/RequestTracker";
+import Picture from "./task-2/Picture";
 
 const App = () => {
   return (
     <>
-      <RequestTracker />
-      </>
+      <Picture />
+    </>
   );
 };
 
