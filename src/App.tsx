@@ -1,8 +1,9 @@
-import Parents from "./task-3/Clock";
+import SyncedInputs from "./task-4/SyncedInputs.tsx";
+
 const App = () => {
   return (
     <>
-      <Parents />
+      <SyncedInputs />
     </>
   );
 };
