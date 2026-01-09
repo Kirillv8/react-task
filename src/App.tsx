@@ -1,9 +1,8 @@
-import Picture from "./task-2/Picture";
-
+import Parents from "./task-3/Clock";
 const App = () => {
   return (
     <>
-      <Picture />
+      <Parents />
     </>
   );
 };
