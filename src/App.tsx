@@ -1,9 +1,9 @@
-import SyncedInputs from "./task-4/SyncedInputs.tsx";
+import ParentAnswer from "./task-5/Answer.tsx";
 
 const App = () => {
   return (
     <>
-      <SyncedInputs />
+      <ParentAnswer />
     </>
   );
 };
